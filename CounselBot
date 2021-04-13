@@ -1,0 +1,246 @@
+<html>
+
+<body style="background-color: #e07a72;" id="lol">
+<h1 style="font-family: Lucida grande; color: #472624; text-align: center;">Counsel Bot</h1>
+<h3 style="font-family: Courier new; color: #472624; text-align: center; margin-top: 100px;">Welcome to counsel bot. Share your problems, and our chatbot will try to help you.<br> Please do not include any form of punctuation and only write one short sentence when<br> speaking with our counselling bot. Most, but not all of the time, please do not <br>speak to our counselling bot in just one word. <br>Most short form words are not recognised.</h3>
+<br>
+<h2 style="font-family: Lucida grande; color: #472624; text-align: center;">How to communicate well with Counsel bot?</h2>
+<h3 style="font-family: Courier new; color: #472624; text-align: center; margin-top: 10px;">Counsel bot can recognise a lot of dialogue. However, it cannot recognize everything. <br> If you want specific answers, protocols can be used! Type 'What are protocols', 'List of protcols' <br> or 'How to activate protocols' to get started!</h3>
+<h3 style="font-family: futura; color: white; text-align: center; margin-top: 10px;">By Nethan Nerella. All rights go to him</h3>
+<h2 style="font-family: futura; color: #a37472; text-align: center; margin-top: 100px; background-color: #87322e;">Our counselling bot</h2>
+
+<div id="chatFeed" style="border: solid 5px #704948; width: 350px; margin-left: 520px; margin-top: 50px; background-color: #824848;">
+
+  <input id="chatTextBox" type="text" placeholder="Type something..." style="width: 300px; font-size: 12px; font-family: futura;"><button id="send" style="width: 50px; background-color: #6e6464; color: #f5f5f5; border-radius: 5px;" onclick="sendIt()">Send</button>
+<h4 style="background-color: #c29795; font-family: Verdana;">Hey there!</h4>
+</div>
+
+
+<script>
+
+
+
+function sendIt() {
+
+  var botText = document.createElement("h4");
+  botText.style.backgroundColor = "#c29795";
+  botText.style.fontFamily = "Verdana";
+
+
+  var chatInput = document.getElementById("chatTextBox").value;
+
+  var userOutput =  document.createElement("h4");
+  userOutput.style.backgroundColor = "#e89e97";
+  userOutput.style.fontFamily = "Verdana";
+  userOutput.style.textAlign = "right";
+  var node1 = document.createTextNode(chatInput);
+
+
+  var chatBody = document.getElementById("chatFeed");
+
+
+
+  userOutput.appendChild(node1);
+  chatBody.appendChild(userOutput);
+
+
+    if ((userOutput.innerHTML == "Hey") || (userOutput.innerHTML == "Hi") || (userOutput.innerHTML == "Hello") || (userOutput.innerHTML == "hey") || (userOutput.innerHTML == "hi") || (userOutput.innerHTML == "hello")){
+
+     var node2 = document.createTextNode("How are you doing?")
+     botText.appendChild(node2);
+
+     chatBody.appendChild(botText);
+
+   } else if ( (userOutput.innerHTML == "I need some help") || (userOutput.innerHTML == "I need help") || (userOutput.innerHTML == "I need your help") || (userOutput.innerHTML == "Help me") || (userOutput.innerHTML == "Help") || (userOutput.innerHTML == "I need some help") || (userOutput.innerHTML == "Please help me") || (userOutput.innerHTML == "Help me please") || (userOutput.innerHTML == "i need help") || (userOutput.innerHTML == "i need your help") || (userOutput.innerHTML == "help me") || (userOutput.innerHTML == "help") || (userOutput.innerHTML == "help me please") || (userOutput.innerHTML == "please help me")){
+
+     var node2 = document.createTextNode("Well, you've come to the right place! What can I do for you?")
+     botText.appendChild(node2);
+
+     chatBody.appendChild(botText);
+
+   } else if ((userOutput.innerHTML == "Tell me a joke") || (userOutput.innerHTML == "I want to hear a joke") || (userOutput.innerHTML == "Let me hear a joke")) {
+
+
+     var node2 =  document.createTextNode("Why did the cow jump over the moon? Because it wanted to deliver milk to the milky way!")
+     botText.appendChild(node2);
+
+     chatBody.appendChild(botText);
+   } else if ((userOutput.innerHTML == "Tell me another joke") || (userOutput.innerHTML == "I want to hear another joke") || (userOutput.innerHTML == "Let me hear another joke")){
+
+     var node2 =  document.createTextNode("Did you hear the mathematician who's afraid of negative numbers? He'll stop at nothing to avoid them!")
+     botText.appendChild(node2);
+
+     chatBody.appendChild(botText);
+
+   } else if ((userOutput.innerHTML == "Who built you") || (userOutput.innerHTML == "Who were you built by") || (userOutput.innerHTML == "Who is your creator") || (userOutput.innerHTML == "Who created you")){
+
+    var node2 = document.createTextNode("I was built by Nethan Nerella, a JavaScript programmer!")
+
+    botText.appendChild(node2);
+
+    chatBody.appendChild(botText);
+  } else if ((userOutput.innerHTML == "I am suffering from depression") || (userOutput.innerHTML == "I have depression") || (userOutput.innerHTML == "I am stressed") || (userOutput.innerHTML == "I am really stressed")){
+
+    var node2 = document.createTextNode("It's okay, I'm here to help you! What are you going through?")
+
+    botText.appendChild(node2);
+
+    chatBody.appendChild(botText);
+
+  } else if ((userOutput.innerHTML == "My friends hate me") || (userOutput.innerHTML == "I am hated by my friends") || (userOutput.innerHTML == "My friends dislike me") || (userOutput.innerHTML == "I am despised of by my friends") || (userOutput.innerHTML == "My friends literally hate me")){
+
+   setTimeout(function(){
+    var node2 = document.createTextNode("Calculating possible reasons...");
+
+    botText.appendChild(node2);
+
+    chatBody.appendChild(botText);
+
+  }, 1000);
+
+   setTimeout(function(){
+
+     var node3 =  document.createTextNode("1. You are annoying \n 2. You are irritating \n 3. You talk too much \n 4. You think your ideas are superior \n 5. You are very arrogant. You should refrain from doing or being these things to improve your relationship with your friends.");
+     botText.appendChild(node3);
+
+     chatBody.appendChild(botText);
+
+
+   }, 2500);
+
+
+ } else if ((userOutput.innerHTML == "I am going through a hard phase in my life") || (userOutput.innerHTML == "My life is difficult") || (userOutput.innerHTML == "My life is very hard") || (userOutput.innerHTML == "My life is hard") || (userOutput.innerHTML == "I am facing challenges in my life") || (userOutput.innerHTML == "I am facing difficult challenges in my life") || (userOutput.innerHTML == "My life is challenging")){
+
+  var node2 = document.createTextNode("Remember, there is always a solution to every problem! Do not give up that easily!");
+  botText.appendChild(node2);
+  chatBody.appendChild(botText);
+
+
+} else if ((userOutput.innerHTML == "I lost my job") || (userOutput.innerHTML ==  "I did badly for my examinations") || (userOutput.innerHTML == "I did not do well for my exams") || (userOutput.innerHTML == "I did badly for my exams") || (userOutput.innerHTML == "I got bad grades") || (userOutput.innerHTML == "I got bad grades in my exams") || (userOutput.innerHTML == "I got bad grades in my examinations") || (userOutput.innerHTML == "I got bad grades in my examinations") || (userOutput.innerHTML == "I did something bad that I am guilty of") || (userOutput.innerHTML == "I did something bad") || (userOutput.innerHTML == "I did bad things") || (userOutput.innerHTML == "I did bad stuff")) {
+
+  var node2 = document.createTextNode("Do not worry! I believe in you. These are temporary challenges. Just believe in yourself!");
+  botText.appendChild(node2);
+  chatBody.appendChild(botText);
+
+} else if ((userOutput.innerHTML == "What are symptoms of depression") || (userOutput.innerHTML == "Symptoms of depression") || (userOutput.innerHTML == "Tell me symptoms of depression") || (userOutput.innerHTML == "What are some symptoms of depression") || (userOutput.innerHTML == "Tell me some symptoms of depression") || (userOutput.innerHTML == "Tell me some symptoms that show depression")) {
+
+  var node2 = document.createTextNode("Symptoms of depression include \n 1. Losing interest in something \n 2. Feeling hopeless \n 3. Increased fatigue and sleeping problems \n  and much more!");
+  botText.appendChild(node2);
+  chatBody.appendChild(botText);
+
+} else if ((userOutput.innerHTML == "How do I solve depression") || (userOutput.innerHTML == "How do I treat depression") || (userOutput.innerHTML == "How to cure depression") || (userOutput.innerHTML == "How to solve depression") || (userOutput.innerHTML == "How to treat depression")){
+
+  var node2 = document.createTextNode("I recommend seeing a Psychiatrist or talking to someone, like me!");
+  botText.appendChild(node2);
+  chatBody.appendChild(botText);
+
+} else if ((userOutput.innerHTML == "How do I activate protocols") || (userOutput.innerHTML == "How to activate protocols")) {
+
+  var node2 = document.createTextNode("Just type that name of the protocol in the chatbox! For example say: 'Depression protocol'");
+  botText.appendChild(node2);
+  chatBody.appendChild(botText);
+
+} else if ((userOutput.innerHTML == "Give me a list of protocols") || (userOutput.innerHTML == "List of protocols")) {
+
+  var node2 = document.createTextNode("1. Depression protocol \n 2. Friendship protocol \n 3. Relationship  protocol \n 4. Life challenge protocol \n 5. Poor grades protocol \n 6. Guilt protocol \n 7. Stress relief protocol");
+  botText.appendChild(node2);
+  chatBody.appendChild(botText);
+
+} else if (userOutput.innerHTML == "What are protocols") {
+
+  var node2 = document.createTextNode("Protocols are used to help you communicate effectively with counsel bot. Not all of what you say is recognised, so to ease communication or find a specific answer to a problem, activate a protocol!");
+  botText.appendChild(node2);
+  chatBody.appendChild(botText);
+
+} else if ((userOutput.innerHTML == "Thank you") || (userOutput.innerHTML == "Thanks") || (userOutput.innerHTML == "Thanks so much") || (userOutput.innerHTML == "Thank you counsel bot") || (userOutput.innerHTML == "Thanks counsel bot") || (userOutput.innerHTML == "Thanks so much counsel bot") || (userOutput.innerHTML == "Thank you so much counsel bot") || (userOutput.innerHTML == "Nice") || (userOutput.innerHTML == "nice")) {
+
+var node2 = document.createTextNode("No problem!");
+botText.appendChild(node2);
+chatBody.appendChild(botText);
+
+} else if (userOutput.innerHTML == "Depression protocol") {
+
+  var node2 = document.createTextNode("Depression is a difficult problem. To treat it, visit a psychiatrist or talk to someone. Remember, no matter what challenge you are going through, there is a solution to every problem!");
+  botText.appendChild(node2);
+  chatBody.appendChild(botText);
+
+} else if (userOutput.innerHTML == "Friendship protocol") {
+
+  var node2 = document.createTextNode("Having good friends is important. If you are despised by your friends, investigate the possible reasons. If they still do not like you, they are not suitable friends for you!");
+  botText.appendChild(node2);
+  chatBody.appendChild(botText);
+
+} else if (userOutput.innerHTML == "Relationship protocol") {
+
+  var node2 = document.createTextNode("Having healthy relationships is important! Improve your relationships by being more sociable and talking to other people. Always be yourself around them!");
+  botText.appendChild(node2);
+  chatBody.appendChild(botText);
+
+} else if (userOutput.innerHTML == "Life challenge protocol") {
+
+  var node2 = document.createTextNode("Remember, there is always a solution to every problem! No matter what you are going through, do remember that it can be solved! Now, are you going to work towards solving it, or just do nothing?");
+  botText.appendChild(node2);
+  chatBody.appendChild(botText);
+
+} else if (userOutput.innerHTML == "Poor grades protocol") {
+
+  var node2 = document.createTextNode("Remember, grades do not define you. They are an inaccurate way of measuring your capabilities. But since they are important, work towards doing better. Make a study schedule, or ask for help!");
+  botText.appendChild(node2);
+  chatBody.appendChild(botText);
+
+} else if (userOutput.innerHTML == "Guilt protocol") {
+
+  var node2 = document.createTextNode("It is normal to feel guilty about doing something. I believe in you! Just improve, and things will be better. Remind yourself to always be the best you can be!");
+  botText.appendChild(node2);
+  chatBody.appendChild(botText);
+
+} else if (userOutput.innerHTML == "Stress relief protocol") {
+
+  var node2 = document.createTextNode("Wanna relieve stress? Type 'Riddle' or 'Joke' or 'Tongue twister' to take your mind off your problems!");
+  botText.appendChild(node2);
+  chatBody.appendChild(botText);
+
+} else if (userOutput.innerHTML == "Riddle") {
+
+  var node2 = document.createTextNode("I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?");
+  botText.appendChild(node2);
+  chatBody.appendChild(botText);
+
+} else if ((userOutput.innerHTML == "Echo") || (userOutput.innerHTML == "echo") || (userOutput.innerHTML == "An echo")){
+
+  var node2 = document.createTextNode("Correct");
+  botText.appendChild(node2);
+  chatBody.appendChild(botText);
+
+} else if (userOutput.innerHTML == "Joke") {
+
+  var node2 = document.createTextNode("Why don’t scientists trust atoms? Because they make up everything.");
+  botText.appendChild(node2);
+  chatBody.appendChild(botText);
+
+} else if (userOutput.innerHTML == "Tongue twister") {
+
+  var node2 = document.createTextNode("Peter Piper picked a peck of pickled peppers.");
+  botText.appendChild(node2);
+  chatBody.appendChild(botText);
+
+} else {
+
+     var node2 = document.createTextNode("I do not understand you. I only have a limited amount of things I can understand in my database! Try another way of saying that.")
+     botText.appendChild(node2);
+
+     chatBody.appendChild(botText);
+
+}
+
+   }
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
