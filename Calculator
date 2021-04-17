@@ -1,0 +1,208 @@
+<html>
+
+<body id="body" style="background-color: #9a67c7;  background-size: cover;">
+
+  <input type="text" id="numInput" style="margin-left: 400px; margin-top: 20px; width: 600px; height: 100px; font-size: 70px; font-family: Verdana; background: linear-gradient(90deg, #a297f7, #8373ff, #5c47ff); color: white;"></input>
+
+<div style="margin-top: -80px;">
+<div style="margin-top: 100px; margin-left: 430px;">
+<button style="padding: 30px; font-size: 30px; height: 85px; color: white; background: linear-gradient(90deg, #2e2d80, #6c20bd, #9710e6); border: solid 5px black; border-radius: 40px; font-family: futura;" onclick="print0()">0</button>
+<button style="padding: 30px; font-size: 30px; height: 85px; color: white; background: linear-gradient(90deg, #2e2d80, #6c20bd, #9710e6); border: solid 5px black; border-radius: 40px; font-family: futura;" onclick="print1()">1</button>
+<button style="padding: 30px; font-size: 30px; height: 85px; color: white; background: linear-gradient(90deg, #2e2d80, #6c20bd, #9710e6); border: solid 5px black; border-radius: 40px; font-family: futura;" onclick="print2()">2</button>
+<button style="padding: 30px; font-size: 30px; height: 85px; color: white; background: linear-gradient(90deg, #2e2d80, #6c20bd, #9710e6); border: solid 5px black; border-radius: 40px; font-family: futura;" onclick="print3()">3</button>
+<button style="padding: 30px; font-size: 30px; height: 85px; color: white; background: linear-gradient(90deg, #2e2d80, #6c20bd, #9710e6); border: solid 5px black; border-radius: 40px; font-family: futura;" onclick="print4()">4</button>
+<button style="padding: 30px; font-size: 30px; height: 85px; color: white; background: linear-gradient(90deg, #2e2d80, #6c20bd, #9710e6); border: solid 5px black; border-radius: 40px; font-family: futura;" onclick="print5()">5</button>
+</div>
+
+<div style="margin-top: 50px; margin-left: 450px;">
+<button style="padding: 30px; font-size: 30px; height: 85px; color: white; background: linear-gradient(90deg, #2e2d80, #6c20bd, #9710e6); border: solid 5px black; border-radius: 40px; font-family: futura;" onclick="print6()">6</button>
+<button style="padding: 30px; font-size: 30px; height: 85px; color: white; background: linear-gradient(90deg, #2e2d80, #6c20bd, #9710e6); border: solid 5px black; border-radius: 40px; font-family: futura;" onclick="print7()">7</button>
+<button style="padding: 30px; font-size: 30px; height: 85px; color: white; background: linear-gradient(90deg, #2e2d80, #6c20bd, #9710e6); border: solid 5px black; border-radius: 40px; font-family: futura;" onclick="print8()">8</button>
+
+
+<button style="padding: 30px; font-size: 30px; height: 85px; color: white; background: linear-gradient(90deg, #2e2d80, #6c20bd, #9710e6); border: solid 5px black; border-radius: 40px; font-family: futura;" onclick="print9()">9</button>
+<button style="padding: 30px; font-size: 30px; height: 85px; color: white; background: linear-gradient(90deg, #2e2d80, #6c20bd, #9710e6); border: solid 5px black; border-radius: 40px; font-family: futura;" onclick="printClear()">Clear</button>
+</div>
+<div style="margin-top: 50px; margin-left: 450px;">
+<button style="padding: 30px; font-size: 30px; height: 85px; color: white; background: linear-gradient(90deg, #2e2d80, #6c20bd, #9710e6); border: solid 5px black; border-radius: 40px; font-family: futura;" onclick="printPlus()">+</button>
+<button style="padding: 30px; font-size: 30px; height: 85px; color: white; background: linear-gradient(90deg, #2e2d80, #6c20bd, #9710e6); border: solid 5px black; border-radius: 40px; font-family: futura;" onclick="printMinus()">-</button>
+<button style="padding: 30px; font-size: 30px; height: 85px; color: white; background: linear-gradient(90deg, #2e2d80, #6c20bd, #9710e6); border: solid 5px black; border-radius: 40px; font-family: futura;" onclick="printMultiply()">*</button>
+<button style="padding: 30px; font-size: 30px; height: 85px; color: white; background: linear-gradient(90deg, #2e2d80, #6c20bd, #9710e6); border: solid 5px black; border-radius: 40px; font-family: futura;" onclick="printDivide()">/</button>
+<button style="padding: 30px; font-size: 30px; height: 85px; color: white; background: linear-gradient(90deg, #2e2d80, #6c20bd, #9710e6); border: solid 5px black; border-radius: 40px; font-family: futura;" onclick="printEnter()">Enter</button>
+</div>
+</div>
+
+
+</body>
+
+<footer>
+ <h4 style="color: white; font-family: futura;">Select Theme</h4>
+
+ <h5 style="color: white; font-family: Arial;">Desert</h5><button style=" background-color: #f5cc3b; color: white;" onclick="selectThemeDesert()">Select theme desert</button>
+<h5 style="color: white; font-family: Arial;">City</h5><button style=" background-color: #f5cc3b; color: white;" onclick="selectThemeCity()">Select theme city</button>
+<h5 style="color: white; font-family: Arial;">Mountains</h5><button style=" background-color: #f5cc3b; color: white;" onclick="selectThemeMountains()">Select theme mountains</button>
+<h5 style="color: white; font-family: Arial;">Space</h5><button style=" background-color: #f5cc3b; color: white;" onclick="selectThemeSpace()">Select theme space</button>
+
+  <h4 style="text-align: center; color: white; font-family: futura; ">Code written by Nethan Nerella.</h4>
+</footer>
+
+<script>
+
+  console.log("Code written by Nethan Nerella.");
+
+function selectThemeDesert(){
+
+var body = document.getElementById("body");
+body.style.backgroundColor = "#d9811c";
+
+
+}
+
+function selectThemeCity (){
+
+  var body = document.getElementById("body");
+  body.style.backgroundColor = "#2ab4c9";
+
+
+}
+
+function selectThemeMountains (){
+
+  var body = document.getElementById("body");
+  body.style.backgroundColor = "#487dc2";
+
+}
+
+function selectThemeSpace (){
+
+  var body = document.getElementById("body");
+  body.style.backgroundColor = "#9a67c7";
+
+}
+
+function print0(){
+
+ var input = document.getElementById("numInput");
+ input.value = input.value + 0;
+
+
+}
+
+function print1(){
+
+  var input = document.getElementById("numInput");
+  input.value = input.value + 1;
+
+}
+
+function print2(){
+
+  var input = document.getElementById("numInput");
+  input.value = input.value + 2;
+
+}
+
+function print3(){
+
+  var input = document.getElementById("numInput");
+  input.value = input.value + 3;
+
+}
+
+
+function print4(){
+
+  var input = document.getElementById("numInput");
+  input.value = input.value + 4;
+
+}
+
+
+function print5(){
+
+  var input = document.getElementById("numInput");
+  input.value = input.value + 5;
+
+}
+
+
+function print6(){
+
+  var input = document.getElementById("numInput");
+  input.value = input.value + 6;
+
+}
+
+function print7(){
+
+  var input = document.getElementById("numInput");
+  input.value = input.value + 7;
+
+}
+
+
+function print8(){
+
+  var input = document.getElementById("numInput");
+  input.value = input.value + 8;
+
+}
+
+
+function print9(){
+
+  var input = document.getElementById("numInput");
+  input.value = input.value + 9;
+
+}
+
+function printPlus(){
+
+  var input = document.getElementById("numInput");
+  input.value = input.value + "+";
+
+}
+
+
+function printMinus(){
+
+  var input = document.getElementById("numInput");
+  input.value = input.value + "-";
+
+}
+
+function printDivide(){
+
+  var input = document.getElementById("numInput");
+  input.value = input.value + "/";
+
+}
+
+
+function printMultiply(){
+
+  var input = document.getElementById("numInput");
+  input.value = input.value + "*";
+
+}
+
+
+function printEnter(){
+
+  var input = document.getElementById("numInput");
+  input.value = eval(input.value);
+
+}
+
+
+function printClear(){
+
+var input = document.getElementById("numInput");
+input.value = "";
+
+}
+
+
+</script>
+
+</html>
