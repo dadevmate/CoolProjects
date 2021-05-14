@@ -1,0 +1,144 @@
+<html>
+
+<body style="background: linear-gradient(90deg, #e3ab10, #e37210, #e34110)" id="body">
+
+  <h1 style="text-align: center; font-family: Lucida grande; color: black;">Homework Bot</h1>
+  <hr style="border: none; width: 300px; background-color: #333333; height: 1px; margin-top: -20px;">
+  <h3 style="color: white; font-family: futura; text-align: center; margin-top: 50px;">The homework bot was designed to help you with homework, hence the name! When asking questions, please be<br> specific and only ask questions when the chat feed tells you to do so! For more help, type 'Help' in the chat feed!<br> Homework bot is also *CASE SENSITIVE*, as well as *SPACE SENSITIVE*. Please be mindful of how you write.</h3>
+
+     <div id="chatFeed" style="border: solid 2px #ffffff; border-radius: 7px; width: 350px; margin-left: 520px; margin-top: 50px; background-color: #383838;">
+
+       <input id="chatTextBox" type="text" placeholder="Type something..." style="width: 300px; height: 30px; font-size: 15px; font-family: futura;"><button id="send" style="width: 50px; height: 30px; font-family: futura; background-color: #c97e5b; color: #f5f5f5; border-radius: 5px;" onclick="execute()">Send</button>
+     <h4 style=" color: white; background-color: #d98332; font-family: Verdana;">Choose an academic level! Type ONLY the exact name<br> of the level, IN FULL FORM. This bot is *CASE SENSITIVE*.<br> <br>Levels available:<br> 1. Secondary 2<br> <br> Please only answer what the bot is asking you. If you type other things, it may not understand you! Be SPECIFIC.</h4>
+     </div>
+
+
+
+  <script>
+
+    function execute(){
+      var botText = document.createElement("h4");
+      botText.style.backgroundColor = "#d98332";
+      botText.style.fontFamily = "Verdana";
+      botText.style.color = "white";
+
+      var chatInput = document.getElementById("chatTextBox").value;
+
+      var userOutput =  document.createElement("h4");
+      userOutput.style.backgroundColor = "#c98461";
+      userOutput.style.fontFamily = "Verdana";
+      userOutput.style.textAlign = "right";
+      userOutput.style.color = "white";
+      var node1 = document.createTextNode(chatInput);
+
+
+      var chatBody = document.getElementById("chatFeed");
+
+
+
+      userOutput.appendChild(node1);
+      chatBody.appendChild(userOutput);
+
+
+
+if ((userOutput.innerHTML == "Secondary 2") || (userOutput.innerHTML == "secondary 2")){
+
+        var node2 =  document.createTextNode("Choose a subject \n Subjects available: \n 1. Science ");
+        botText.appendChild(node2);
+        chatBody.appendChild(botText);
+
+
+
+
+
+} else if ((userOutput.innerHTML == "Science") || (userOutput.innerHTML == "science")){
+
+           var node2 =  document.createTextNode("Excellent choice! Now choose a topic! \n Topics available: \n 1. Forces \n 2. Energy \n 3. Sound. DO NOT REPHRASE THE OPTIONS, just type the EXACT thing!");
+           botText.appendChild(node2);
+           chatBody.appendChild(botText);
+
+
+        } else if ((userOutput.innerHTML == "forces") || (userOutput.innerHTML == "Forces")) {
+
+          var node2 =  document.createTextNode("What would you like to do? \n 1. Ask a question on forces \n 2. Get tested on forces \n 3. Generate notes on forces \n Please type EXACT option that you want. Just copy the text of the option above and paste it! NO REPHRASING! Also, this is CASE SENSITIVE. DO NOT INCLUDE THE NUMBER OF THE OPTION");
+          botText.appendChild(node2);
+          chatBody.appendChild(botText);
+
+
+        } else if ((userOutput.innerHTML == "Sound") || (userOutput.innerHTML == "sound")) {
+
+          var node2 =  document.createTextNode("What would you like to do? \n 1. Ask a question on sound \n 2. Get tested on sound \n 3. Generate notes on sound \n Please type EXACT option that you want. Just copy the text of the option above and paste it! NO REPHRASING! Also, this is CASE SENSITIVE. DO NOT INCLUDE THE NUMBER OF THE OPTION");
+          botText.appendChild(node2);
+          chatBody.appendChild(botText);
+
+        } else if ((userOutput.innerHTML == "Energy") || (userOutput.innerHTML == "energy")){
+
+          var node2 =  document.createTextNode("What would you like to do? \n 1. Ask a question on energy \n 2. Get tested on energy \n 3. Generate notes on energy \n Please type EXACT option that you want. Just copy the text of the option above and paste it! NO REPHRASING! Also, this is CASE SENSITIVE. DO NOT INCLUDE THE NUMBER OF THE OPTION");
+          botText.appendChild(node2);
+          chatBody.appendChild(botText);
+
+        } else if ((userOutput.innerHTML == "Ask a question on forces") || (userOutput.innerHTML == "ask a question on forces")) {
+
+          var node2 =  document.createTextNode("Go, ahead! Ask a question on forces. Please remeber to ask specific questions in common words. Not all questions are recognized, so don't be surprised if I don't understand you!");
+          botText.appendChild(node2);
+          chatBody.appendChild(botText);
+
+        } else if ((userOutput.innerHTML == "Get tested on forces") || (userOutput.innerHTML == "get tested on forces")){
+
+        // Do a random qns picked using math.random() from an array
+
+        } else if ((userOutput.innerHTML == "Generate notes on forces") || (userOutput.innerHTML == "generate notes on forces")){
+
+
+        } else if ((userOutput.innerHTML == "Generate notes on forces") || (userOutput.innerHTML == "generate notes on forces")) {
+
+
+        } else if ((userOutput.innerHTML == "Ask a question on sound") || (userOutput.innerHTML == "ask a question on sound")){
+          var node2 =  document.createTextNode("Go, ahead! Ask a question on sound. Please remeber to ask specific questions in common words. Not all questions are recognized, so don't be surprised if I don't understand you!");
+          botText.appendChild(node2);
+          chatBody.appendChild(botText);
+
+        } else if ((userOutput.innerHTML == "Get tested on sound") || (userOutput.innerHTML == "get tested on sound")){
+
+// Do a random qns picked using math.random() from an array
+
+        } else if ((userOutput.innerHTML == "Generate notes on sound") || (userOutput.innerHTML == "generate notes on sound")){
+
+
+        } else if ((userOutput.innerHTML == "Ask a question on energy") || (userOutput.innerHTML == "ask a question on energy")){
+
+          var node2 =  document.createTextNode("Go, ahead! Ask a question on energy. Please remeber to ask specific questions in common words. Not all questions are recognized, so don't be surprised if I don't understand you!");
+          botText.appendChild(node2);
+          chatBody.appendChild(botText);
+
+        } else if ((userOutput.innerHTML == "Generate notes on energy") || (userOutput.innerHTML == "generate notes on energy")) {
+
+        } else if ((userOutput.innerHTML == "Get tested on energy") || (userOutput.innerHTML == "get tested on energy")) {
+
+       // Do a random qns picked using math.random() from an array
+
+        } else {
+
+         var node2 =  document.createTextNode("I don't understand you, dude. Please answer my question or rephrase your answer!");
+      botText.appendChild(node2);
+      chatBody.appendChild(botText);
+
+
+      }
+
+      }
+
+
+
+// Separate
+
+
+
+  </script>
+
+
+</body>
+
+
+</html>
+
