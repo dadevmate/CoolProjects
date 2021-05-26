@@ -1,0 +1,559 @@
+<html>
+
+<head><title>Resume Generator</title></html>
+<body style="background-color: #f2f2f2;" id="body">
+
+<div id="stuff">
+<h1 style="text-align: center; font-family: Verdana; color: black;">Resume generator</h1>
+<hr style="width: 350px; color: black; margin-top: -10px;">
+
+
+<h3 style="text-align: center; color: black; font-family: Georgia; margin-top: 100px;">Start generating beautiful resumes with our generator with a click of a button.</h3>
+
+<h2 style="border: solid 1px black; width: 300px; background-color: black; text-align: center; margin-left: 550px; color: #cc3131;  border-radius: 7px; font-family: Helvetica; margin-top: 100px;">Generate your Resume...</h2>
+
+<div>
+
+<h2 style="text-align: center; font-family: Verdana; color: black; margin-top: 50px;">Basic Information</h2>
+
+  <div style="margin-left: 518px; margin-top: 100px;"><label style="font-family: Verdana;">Full name: </label><input class="ice" id="fullName" type="text" style="font-size: 20px; font-family: Georgia;"></div>
+
+
+
+<div  style="margin-left: 300px; margin-top: 50px; margin-left: 550px;"><label style="font-family: Verdana;">Email: </label><input class="ice" id="email" type="text" style="font-size: 20px; font-family: Georgia;"></div>
+
+<textarea id="objective" type="text" style=" margin-left: 300px; margin-top: 50px; margin-left: 490px; font-size: 15px; font-family: Verdana; width: 500px; height: 100px;" placeholder="Your Objective..."></textarea>
+<div  style="margin-left: 300px; margin-top: 50px; margin-left: 550px;"><label style="font-family: Verdana;">Phone: </label><input id="phone" type="text" style="font-size: 20px; font-family: Georgia;"></div>
+<div  style="  margin-left: 300px; margin-top: 50px; margin-left: 550px;"><label style="font-family: Verdana;">Address: </label><input id="address" type="text" style="font-size: 20px; font-family: Georgia; width: 400px;"></div>
+<h2 style="text-align: center; font-family: Verdana; color: black; margin-top: 50px;">Primary Information</h2>
+<div  style="  margin-left: 300px; margin-top: 50px; margin-left: 550px;"><label style="font-family: Verdana;">Skill 1: </label><input class="ice" id="s1" type="text" style="font-size: 20px; font-family: Georgia;"></div>
+<div  style="  margin-left: 300px; margin-top: 50px; margin-left: 550px;"><label style="font-family: Verdana;">Skill 2: </label><input class="ice" id="s2" type="text" style="font-size: 20px; font-family: Georgia;"></div>
+<div  style="  margin-left: 300px; margin-top: 50px; margin-left: 550px;"><label style="font-family: Verdana;">Skill 3: </label><input class="ice" id="s3" type="text" style="font-size: 20px; font-family: Georgia;"></div>
+<div  style="  margin-left: 300px; margin-top: 50px; margin-left: 550px;"><label style="font-family: Verdana;">Skill 4: </label><input class="ice" id="s4" type="text" style="font-size: 20px; font-family: Georgia;"></div>
+<div  style="  margin-left: 300px; margin-top: 50px; margin-left: 550px;"><label style="font-family: Verdana;">Skill 5: </label><input class="ice" id="s5" type="text" placeholder="(if applicable)" style="font-size: 20px; font-family: Georgia;"></div>
+<div  style="  margin-left: 300px; margin-top: 50px; margin-left: 550px;"><label style="font-family: Verdana;">Skill 6: </label><input id="s6" type="text" placeholder="(if applicable)" style="font-size: 20px; font-family: Georgia;"></div>
+<div  style="  margin-left: 300px; margin-top: 50px; margin-left: 550px;"><label style="font-family: Verdana;">Skill 7: </label><input id="s7" type="text" placeholder="(if applicable)" style="font-size: 20px; font-family: Georgia;"></div>
+<div  style="  margin-left: 300px; margin-top: 50px; margin-left: 550px;"><label style="font-family: Verdana;">Skill 8: </label><input id="s8" type="text" placeholder="(if applicable)" style="font-size: 20px; font-family: Georgia;"></div>
+<div  style="  margin-left: 300px; margin-top: 50px; margin-left: 550px;"><label style="font-family: Verdana;">Skill 9: </label><input id="s9" type="text" placeholder="(if applicable)" style="font-size: 20px; font-family: Georgia;"></div>
+<div  style="  margin-left: 300px; margin-top: 50px; margin-left: 550px;"><label style="font-family: Verdana;">Skill 10: </label><input id="s10" type="text" placeholder="(if applicable)" style="font-size: 20px; font-family: Georgia;"></div>
+
+
+
+<div  style="margin-left: 300px; margin-top: 100px;"><label style="font-family: Verdana;">Language 1: </label><input class="ice" id="l1" type="text" style="font-size: 20px; font-family: Georgia;"></div>
+<div  style="margin-left: 750px; margin-top: -30px;"><label style="font-family: Verdana;">Language 2: </label><input class="ice" id="l2" type="text" style="font-size: 20px; font-family: Georgia;"></div>
+<div  style="  margin-left: 300px; margin-top: 50px; margin-left: 550px;"><label style="font-family: Verdana;">Language 3: </label><input id="l3" placeholder="(if applicable)" type="text" style="font-size: 20px; font-family: Georgia;"></div>
+</div>
+
+<h2 style="text-align: center; font-family: Verdana; color: black; margin-top: 50px;">Advanced Information</h2>
+<div style="margin-top: 50px; margin-left: 400px;"><label style="font-family: Verdana;">Qualification 1: </label><input class="ice" id="q1"  placeholder = "Course taken and/or qualfication" type="text" style="font-size: 20px; font-family: Georgia; width: 500px;"></div>
+<div  style="margin-top: 50px; margin-left: 400px;"><label style="font-family: Verdana;">Qualification 2: </label><input id="q2" placeholder = "Course taken and/or qualfication (if applicable)" type="text" style="font-size: 20px; font-family: Georgia; width: 500px;"></div>
+<div  style="margin-top: 50px; margin-left: 400px;"><label style="font-family: Verdana;">Qualification 3: </label><input id="q3" placeholder = "Course taken and/or qualfication (if applicable)" type="text" style="font-size: 20px; font-family: Georgia; width: 500px;"></div>
+<div  style="margin-top: 50px; margin-left: 400px;"><label style="font-family: Verdana;">Qualification 4: </label><input id="q4" placeholder = "Course taken and/or qualfication (if applicable)" type="text" style="font-size: 20px; font-family: Georgia; width: 500px;"></div>
+<div  style="margin-left: 300px; margin-top: 100px;"><label style="font-family: Verdana;">High school: </label><input id="hs" type="text" style="font-size: 20px; width: 300px; font-family: Georgia;"></div>
+<div  style="  margin-left: 300px; margin-top: -30px; margin-left: 800px;"><label style="font-family: Verdana;">College: </label><input id="college" type="text" style="font-size: 20px; width: 300px; font-family: Georgia;"></div>
+<textarea id="desc" type="text" style=" margin-left: 300px; margin-top: 50px; margin-left: 490px; font-size: 15px; font-family: Verdana; width: 500px; height: 100px;" placeholder="Personal description about yourself and your skills"></textarea>
+<h2 style="text-align: center; font-family: Verdana; color: black; margin-top: 50px;">Additional Information</h2>
+
+<div  style="margin-left: 500px; margin-top: 120px;"><label style="font-family: Verdana;">(1) Job Employed for: </label><input id="j1" type="text" style="width: 400px; font-size: 20px; font-family: Georgia;" placeholder="(if applicable)"></div>
+<div  style="margin-left: 500px; margin-top: 30px;"><label style="font-family: Verdana;">(1) Organisation: </label><input  id="o1" type="text" style="width: 300px; font-size: 20px; font-family: Georgia;" placeholder="(if applicable)"></div>
+<div  style="margin-left: 500px; margin-top: 30px;"><label style="font-family: Verdana;">(1) Date employed: </label><input id="de1" type="text" style="width: 300px; font-size: 20px; font-family: Georgia;" placeholder="(if applicable)"></div>
+<div  style="margin-left: 500px; margin-top: 30px;"><label style="font-family: Verdana;">(1) Date resigned: </label><input id="dr1" type="text" style="width: 300px; font-size: 20px; font-family: Georgia;" placeholder="(if applicable)"></div>
+<div  style="margin-left: 500px; margin-top: 30px;"><label style="font-family: Verdana;">(2) Job Employed for: </label><input id="j2" type="text" style="width: 400px; font-size: 20px; font-family: Georgia;" placeholder="(if applicable)"></div>
+<div  style="margin-left: 500px; margin-top: 30px;"><label style="font-family: Verdana;">(2) Organisation: </label><input id="o2" type="text" style="width: 300px; font-size: 20px; font-family: Georgia;" placeholder="(if applicable)"></div>
+<div  style="margin-left: 500px; margin-top: 30px;"><label style="font-family: Verdana;">(2) Date employed: </label><input id="de2" type="text" style="width: 300px; font-size: 20px; font-family: Georgia;" placeholder="(if applicable)"></div>
+<div  style="margin-left: 500px; margin-top: 30px;"><label style="font-family: Verdana;">(2) Date resigned: </label><input id="dr2" type="text" style="width: 300px; font-size: 20px; font-family: Georgia;" placeholder="(if applicable)"></div>
+
+
+
+<button id="bit" onclick="letsgo()" style="margin-top: 50px; width: 200px; margin-left: 550px; padding: 20px; border-radius: 7px; border: 3px; border: solid black; background-color: #e8b0cd; font-size: 20px; font-family: futura;">Let's go!</button>
+<h5 style="font-family: futura; margin-left: 550px; color: red;">*Please double click the button</h5>
+</div>
+<script>
+
+
+
+function letsgo(){
+
+  var body = document.getElementById("body");
+  var stuff =  document.getElementById("stuff");
+
+  const inputFullName = document.getElementById("fullName");
+  const btn = document.getElementById("bit");
+
+  const inputEmail = document.getElementById("email");
+  const inputObjective =  document.getElementById("objective");
+  const inputPhone = document.getElementById("phone");
+  const inputAddress = document.getElementById("address");
+
+  const inputS1 = document.getElementById("s1");
+  const inputS2 = document.getElementById("s2");
+  const inputS3 = document.getElementById("s3");
+  const inputS4 = document.getElementById("s4");
+  const inputS5 = document.getElementById("s5");
+  const inputS6 = document.getElementById("s6");
+  const inputS7 = document.getElementById("s7");
+  const inputS8 = document.getElementById("s8");
+  const inputS9 = document.getElementById("s9");
+  const inputS10 = document.getElementById("s10");
+
+  const inputL1 = document.getElementById("l1");
+  const inputL2 = document.getElementById("l2");
+  const inputL3 = document.getElementById("l3");
+
+  const inputQ1 = document.getElementById("q1");
+  const inputQ2 = document.getElementById("q2");
+  const inputQ3 = document.getElementById("q3");
+  const inputQ4 = document.getElementById("q4");
+
+  const inputHs = document.getElementById("hs");
+  const inputCollege = document.getElementById("college");
+
+
+  const inputDesc = document.getElementById("desc");
+
+  const inputJ1 = document.getElementById("j1");
+  const inputO1 = document.getElementById("o1");
+  const inputDe1 = document.getElementById("de1");
+  const inputDr1 = document.getElementById("dr1");
+
+  const inputJ2 = document.getElementById("j2");
+  const inputO2 = document.getElementById("o2");
+  const inputDe2 = document.getElementById("de2");
+  const inputDr2 = document.getElementById("dr2");
+
+  const inputJ3 = document.getElementById("j3");
+  const inputO3 = document.getElementById("o3");
+  const inputDe3 = document.getElementById("de3");
+  const inputDr3 = document.getElementById("dr3");
+
+
+body.style.backgroundColor = "#ffffff";
+
+
+btn.addEventListener('click', (e) => {
+
+const reeke =  document.getElementsByClassName("ice").value;
+  if ((reeke == "") || (reeke == " ")){
+
+  alert("Please fill up all the required spaces before proceeding. (If applicable) blanks are optional and are not required to be filled up.")
+
+  }
+
+
+  const fullName = inputFullName.value;
+  const one = document.createElement('h1');
+  one.style.color = "#303030";
+  one.style.marginLeft = "200px";
+  one.style.marginTop = "50px";
+  one.style.fontFamily = "futura";
+  one.innerHTML = fullName;
+  body.appendChild(one);
+
+
+  const two = document.createElement("hr");
+  two.style.borderStyle = "solid";
+  two.style.border = "solid 1px black";
+  two.style.width = "380px";
+  two.style.marginLeft = "150px";
+  two.style.marginTop = "-20px";
+  body.appendChild(two);
+
+
+  const email = inputEmail.value;
+  const three = document.createElement("h4");
+  three.style.fontFamily = "Georgia";
+  three.style.color = "#a35252";
+  three.style.marginLeft = "200px";
+  three.innerHTML = "Email: " + email;
+  body.appendChild(three);
+
+
+
+  const phone = inputPhone.value;
+  const four = document.createElement("h4");
+  four.style.fontFamily = "Georgia";
+  four.style.color = "#a35252";
+  four.style.marginLeft = "200px";
+  four.innerHTML = "Phone: " + phone;
+  body.appendChild(four);
+
+
+
+  const address = inputAddress.value;
+  const five = document.createElement("label");
+  five.style.fontFamily = "Verdana";
+  five.style.fontStyle = "italic";
+  five.style.color = "#424242";
+  five.style.marginLeft = "150px";
+  five.style.marginTop = "-10px";
+  five.innerHTML = "Address: " + address;
+  body.appendChild(five);
+
+
+  const six = document.createElement("h2");
+  six.style.fontFamily = "Lucida Grande";
+  six.style.color = "#303030";
+  six.style.marginLeft = "200px";
+  six.style.marginTop = "150px";
+  six.innerHTML = "My objective";
+  body.appendChild(six);
+
+  const seven = document.createElement("hr");
+  seven.style.borderStyle = "solid";
+  seven.style.border = "solid 1px black";
+  seven.style.width = "1200px";
+  seven.style.marginLeft = "150px";
+  seven.style.marginTop = "-20px";
+  body.appendChild(seven);
+
+  const objective = inputObjective.value;
+  const eight = document.createElement("p");
+  eight.style.fontFamily = "Avenir Next";
+  eight.style.color = "#828282";
+  eight.style.marginLeft = "180px";
+  eight.style.marginTop = "30px";
+  eight.innerHTML = objective;
+  body.appendChild(eight);
+
+  const nine = document.createElement("h2");
+  nine.style.fontFamily = "Lucida Grande";
+  nine.style.color = "#303030";
+  nine.style.marginLeft = "200px";
+  nine.style.marginTop = "150px";
+  nine.innerHTML = "My skills";
+  body.appendChild(nine);
+
+  const ten = document.createElement("hr");
+  ten.style.borderStyle = "solid";
+  ten.style.border = "solid 1px black";
+  ten.style.width = "1200px";
+  ten.style.marginLeft = "150px";
+  ten.style.marginTop = "-20px";
+  body.appendChild(ten);
+
+  const eleven = document.createElement("p");
+  const s1 = inputS1.value;
+  const s2 = inputS2.value;
+  const s3 = inputS3.value;
+  const s4 = inputS4.value;
+  const s5 = inputS5.value;
+  const s6 = inputS6.value;
+  const s7 = inputS7.value;
+  const s8 = inputS8.value;
+  const s9 = inputS9.value;
+const s10 = inputS10.value;
+
+  eleven.style.fontFamily = " Avenir Next";
+  eleven.style.color = "#303030";
+  eleven.style.marginLeft = "180px";
+  eleven.style.marginTop = "30px";
+  eleven.innerHTML = "My skills include " + s1 +", " + s2 + ", " + s3 + " and " + s4;
+
+  if (s5 !== ""){
+
+  eleven.innerHTML = "My skills include " + s1 +", " + s2 + ", " + s3 + ", " + s4 + " and " + s5;
+
+  }
+
+  if (s6 !== ""){
+
+  eleven.innerHTML = "My skills include " + s1 +", " + s2 + ", " + s3 + ", " + s4 + ", " + s5 + " and " + s6;
+
+  }
+
+  if (s7 !== ""){
+
+  eleven.innerHTML = "My skills include " + s1 +", " + s2 + ", " + s3 + ", " + s4 + ", " + s5 + ", " + s6 + " and " + s7;
+
+  }
+
+  if (s8 !== ""){
+
+  eleven.innerHTML = "My skills include " + s1 +", " + s2 + ", " + s3 + ", " + s4 + ", " + s5 + ", " + s6 + ", " + s7 + " and " + s8;
+
+  }
+
+  if (s9 !== ""){
+
+  eleven.innerHTML = "My skills include " + s1 +", " + s2 + ", " + s3 + ", " + s4 + ", " + s5 + ", " + s6 + ", " + s7 + ", " + s8 + " and " + s9;
+
+  }
+
+  if (s10 !== ""){
+
+  eleven.innerHTML = eleven.innerHTML = "My skills include " + s1 +", " + s2 + ", " + s3 + ", " + s4 + ", " + s5 + ", " + s6 + ", " + s7 + ", " + s8 + ", " + s9 + " and " + s10;
+
+  }
+
+  body.appendChild(eleven);
+
+
+  const twelve = document.createElement("h2");
+  twelve.style.fontFamily = "Lucida Grande";
+  twelve.style.color = "#303030";
+  twelve.style.marginLeft = "200px";
+  twelve.style.marginTop = "150px";
+  twelve.innerHTML = "Spoken Languages";
+  body.appendChild(twelve);
+
+  const thirteen = document.createElement("hr");
+  thirteen.style.borderStyle = "solid";
+  thirteen.style.border = "solid 1px black";
+  thirteen.style.width = "1200px";
+  thirteen.style.marginLeft = "150px";
+  thirteen.style.marginTop = "-20px";
+  body.appendChild(thirteen);
+
+
+  const fourteen = document.createElement("p");
+  const l1 = inputL1.value;
+  const l2 = inputL2.value;
+  const l3 = inputL3.value;
+  fourteen.style.fontFamily = "Avenir Next";
+  fourteen.style.color = "#828282";
+  fourteen.style.marginLeft = "180px";
+  fourteen.style.marginTop = "30px";
+  fourteen.innerHTML = "Languages I know include " + l1 + ", " + "and " + l2;
+
+  if (l3 !== ""){
+
+ fourteen.innerHTML = "Languages I know include " + l1 + ", " + l2 + " and " + l3;
+
+  }
+
+  body.appendChild(fourteen);
+
+
+  const fifteen = document.createElement("h2");
+  fifteen.style.fontFamily = "Lucida Grande";
+  fifteen.style.color = "#303030";
+  fifteen.style.marginLeft = "200px";
+  fifteen.style.marginTop = "150px";
+  fifteen.innerHTML = "Education";
+  body.appendChild(fifteen);
+
+  const sixteen = document.createElement("hr");
+  sixteen.style.borderStyle = "solid";
+  sixteen.style.border = "solid 1px black";
+  sixteen.style.width = "1200px";
+  sixteen.style.marginLeft = "150px";
+  sixteen.style.marginTop = "-20px";
+  body.appendChild(sixteen);
+
+
+  const seventeen = document.createElement("h4");
+  const Hs = inputHs.value;
+  seventeen.style.fontFamily = "Georgia";
+  seventeen.style.color = "#a35252";
+  seventeen.style.marginLeft = "200px";
+  seventeen.innerHTML = "High School: " + Hs;
+  body.appendChild(seventeen);
+
+  const eighteen = document.createElement("h4");
+  const collegeLOL = inputCollege.value;
+  eighteen.style.fontFamily = "Georgia";
+  eighteen.style.color = "#a35252";
+  eighteen.style.marginLeft = "200px";
+  eighteen.innerHTML = "College: " + collegeLOL;
+  body.appendChild(eighteen);
+
+
+  const nineteen = document.createElement("p");
+  const q1 = inputQ1.value;
+  const q2 = inputQ2.value;
+  const q3 = inputQ3.value;
+  const q4 = inputQ4.value;
+  nineteen.style.fontFamily = "Avenir Next";
+  nineteen.style.color = "#828282";
+  nineteen.style.marginLeft = "180px";
+  nineteen.style.marginTop = "30px";
+  nineteen.innerHTML = "My qualifications as well as the courses I have taken are " + q1;
+
+  if (q2 !== "") {
+
+  nineteen.innerHTML = nineteen.innerHTML + " and " + q2;
+
+  }
+
+  if (q3 !== "") {
+
+  nineteen.innerHTML = nineteen.innerHTML + ", " + q2 + " and " + q3;
+
+  }
+
+  if (q4 !== "") {
+
+  nineteen.innerHTML = nineteen.innerHTML + ", " + q2 + ", " + q3 + " and " + q4;
+
+  }
+  body.appendChild(nineteen);
+
+
+  const twenty = document.createElement("h2");
+  twenty.style.fontFamily = "Lucida Grande";
+  twenty.style.color = "#303030";
+  twenty.style.marginLeft = "200px";
+  twenty.style.marginTop = "150px";
+  twenty.innerHTML = "About myself";
+  body.appendChild(twenty);
+
+  const twentyOne = document.createElement("hr");
+  twentyOne.style.borderStyle = "solid";
+  twentyOne.style.border = "solid 1px black";
+  twentyOne.style.width = "1200px";
+  twentyOne.style.marginLeft = "150px";
+  twentyOne.style.marginTop = "-20px";
+  body.appendChild(twentyOne);
+
+  const twentyTwo = document.createElement("p");
+  const desc = inputDesc.value;
+  twentyTwo.style.fontFamily = "Avenir Next";
+  twentyTwo.style.color = "#828282";
+  twentyTwo.style.marginLeft = "180px";
+  twentyTwo.style.marginTop = "30px";
+  twentyTwo.innerHTML = desc;
+  body.appendChild(twentyTwo);
+
+const j1 = inputJ1.value;
+
+  if (j1 !== ""){
+
+  const lol = document.createElement("div");
+  lol.style.marginTop = "50px";
+
+  const twentyThree = document.createElement("h2");
+  twentyThree.style.fontFamily = "Lucida Grande";
+  twentyThree.style.color = "#303030";
+  twentyThree.style.marginLeft = "200px";
+  twentyThree.style.marginTop = "150px";
+  twentyThree.innerHTML = "My experience";
+  lol.appendChild(twentyThree)
+
+
+
+  const twentyFour = document.createElement("hr");
+  twentyFour.style.borderStyle = "solid";
+  twentyFour.style.border = "solid 1px black";
+  twentyFour.style.width = "1200px";
+  twentyFour.style.marginLeft = "150px";
+  twentyFour.style.marginTop = "-20px";
+  lol.appendChild(twentyFour);
+
+  const twentyFive = document.createElement("h3");
+  twentyFive.style.fontFamily = "Tahoma";
+  twentyFive.style.marginLeft = "150px";
+  twentyFive.style.marginTop = "1px";
+  twentyFive.innerHTML = "- Worked as " + j1;
+  lol.appendChild(twentyFive);
+
+  const twentySix = document.createElement("h3");
+  const o1 = inputO1.value;
+  twentySix.style.fontFamily = "Tahoma";
+  twentySix.style.marginLeft = "150px";
+  twentySix.style.marginTop = "1px";
+  twentySix.innerHTML = "for " + o1;
+  lol.appendChild(twentySix);
+
+  const twentySeven = document.createElement("h3");
+  const de1 = inputDe1.value;
+  twentySeven.style.fontFamily = "Tahoma";
+  twentySeven.style.marginLeft = "150px";
+  twentySeven.style.marginTop = "1px";
+  twentySeven.innerHTML = "from " + de1;
+  lol.appendChild(twentySeven);
+
+  const twentyEight = document.createElement("h3");
+  const dr1 = inputDr1.value;
+  twentyEight.style.fontFamily = "Tahoma";
+  twentyEight.style.marginLeft = "150px";
+  twentyEight.style.marginTop = "1px";
+  twentyEight.innerHTML = "to " + dr1;
+  lol.appendChild(twentyEight);
+
+  body.appendChild(lol);
+
+}
+
+const j2 = inputJ2.value;
+
+  if (j2 !== ""){
+
+
+    const twentyNine = document.createElement("h3");
+    twentyNine.style.fontFamily = "Tahoma";
+    twentyNine.style.marginLeft = "550px";
+    twentyNine.style.marginTop = "1px";
+    twentyNine.innerHTML = "- Worked as " + j2;
+    body.appendChild(twentyNine);
+
+    const thirty = document.createElement("h3");
+    const o2 = inputO2.value;
+    thirty.style.fontFamily = "Tahoma";
+    thirty.style.marginLeft = "550px";
+    thirty.style.marginTop = "1px";
+    thirty.innerHTML = "for " + o2;
+    body.appendChild(thirty);
+
+    const thirtyOne = document.createElement("h3");
+    const de2 = inputDe2.value;
+    thirtyOne.style.fontFamily = "Tahoma";
+    thirtyOne.style.marginLeft = "550px";
+    thirtyOne.style.marginTop = "1px";
+    thirtyOne.innerHTML = "from " + de2;
+    body.appendChild(thirtyOne);
+
+    const thirtyTwo = document.createElement("h3");
+    const dr2 = inputDr2.value;
+    thirtyTwo.style.fontFamily = "Tahoma";
+    thirtyTwo.style.marginLeft = "550px";
+    thirtyTwo.style.marginTop = "1px";
+    thirtyTwo.innerHTML = "to " + dr2;
+    body.appendChild(thirtyTwo);
+
+
+  }
+
+
+
+
+
+});
+
+var count = 0;
+
+btn.onclick = function(){
+
+
+count++;
+console.log(count);
+if (count == 1){
+
+stuff.style.display = "none";
+console.log("ll");
+}
+
+}
+
+
+}
+
+
+
+
+
+
+
+//<h2 style="font-family: Lucida Grande; color: #303030; margin-left: 200px; margin-top: 150px;">My experience</h2>
+
+//<h3 style="margin-left: 150px; margin-top: 1px; font-family: Tahoma;">- Worked as </h3>
+//<h3 style="margin-left: 273px; margin-top: -42px; font-family: Tahoma;">for </h3>
+//<h3 style="margin-left: 308px; margin-top: -42px; font-family: Tahoma;">from </h3>
+//<h3 style="margin-left: 361px; margin-top: -41px; font-family: Tahoma;">to </h3>
+
+
+
+
+
+  </script>
+  </body>
+</html>
