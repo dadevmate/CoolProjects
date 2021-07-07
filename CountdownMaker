@@ -1,0 +1,63 @@
+<html>
+
+<head><title>Count down Maker</title></head>
+
+<body id="body" style="background-color: #212121;">
+
+<h1 id="heading" style= "text-align: center; font-family: futura; margin-top: 150px; color: white;">Make your own Count down</h1>
+<input type="range" value="75" min="1" onchange="changie()" max="100" id="range" style="border: none; margin-top: 100px; margin-left: 600px;">
+<h1 id="ended" style="display: none; font-family: futura; color: white; text-align: center; margin-top: 300px;">Count down has ended!</h1>
+<button id="again" style="display: none; margin-left: 570px; margin-top: 50px; font-family: futura; font-size: 20;  color: black; border: solid 5px white; border-radius: 3px; background-color: #ffffff;">Start another Count down</button>
+
+  <script>
+var element =  document.createElement("input");
+element.style.width = "450px";
+element.style.fontFamily = "Lucida Grande";
+element.style.borderRadius = "5px";
+element.style.padding = "30px";
+element.style.fontSize ="25";
+element.style.marginLeft = "500px";
+element.style.marginTop = "100px";
+element.style.backgroundColor ="#4a4a4a";
+element.style.color = "#ffffff"
+
+    function changie() {
+
+      var rangie = document.getElementById("range").value;
+
+  element.value = "Now counting: " + rangie + " seconds";
+  var eck = parseInt(document.getElementById("range").value) * 1000;
+  console.log(eck);
+
+
+
+  setTimeout(function(){
+
+  document.getElementById("heading").style.display = "none";
+  document.getElementById("range").style.display = "none";
+  element.style.display = "none";
+  document.getElementById("ended").style.display = "block";
+  document.getElementById("again").style.display = "block";
+  document.getElementById("again").onclick = function(){
+    location.reload();
+  }
+
+  }, eck);
+
+    }
+
+
+document.getElementById("body").appendChild(element);
+
+function process(){
+
+}
+
+//<input type="range" value="75" min="1" onchange="changie()" max="100" id="range" style="margin-top: 300px; margin-left: 600px;">
+  </script>
+
+  <h3 style="margin-top: 270px; text-align: center; color: white; font-family: futura;">Designed and Coded by Nethan Nerella</h3>
+</body>
+
+
+</html>
